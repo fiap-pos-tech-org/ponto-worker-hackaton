@@ -17,11 +17,6 @@ public class ClockRegistryReportDTO extends ClockRegistryBaseDTO {
         this.yearMonth = yearMonth;
     }
 
-    @Override
-    public ClockRegistryReportDTO comId(Long id) {
-        return new ClockRegistryReportDTO(id, getUserId(), yearMonth);
-    }
-
     public String getYearMonth() {
         return yearMonth;
     }
