@@ -19,9 +19,11 @@ import org.springframework.stereotype.Service;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class ClockRegistryService {
@@ -48,9 +50,10 @@ public class ClockRegistryService {
                 .orElseThrow(() -> new EntityNotFoundException(String.format("Usuário com id %s não encontrado.", userId)));
 
         ClockRegistry registry = clockRegistryMapper.toEntity(clockRegistryDTO, user);
+        ClockRegistry savedRegistry = clockRegistryRepository.save(registry);
         logger.info(String.format("registro de ponto efetuado com sucesso para o usuário com id %s.", userId));
 
-        return clockRegistryMapper.toDto(clockRegistryRepository.save(registry));
+        return clockRegistryMapper.toDto(savedRegistry);
     }
 
     @Transactional
@@ -97,11 +100,16 @@ public class ClockRegistryService {
 
     private Duration calculateTotalHoursWorked(List<ClockRegistry> clockRegistries) {
         var totalHoursWorked = Duration.ZERO;
-        for (int i = 0; i < clockRegistries.size() - 1; i++) {
-            var initialDate = clockRegistries.get(i).getTime();
-            var endDate = clockRegistries.get(i + 1).getTime();
-            var difference = Duration.between(initialDate, endDate);
-            totalHoursWorked = totalHoursWorked.plus(difference);
+        List<List<ClockRegistry>> list = IntStream.range(0, clockRegistries.size() / 2)
+                .mapToObj(i -> Arrays.asList(clockRegistries.get(i * 2), clockRegistries.get(i * 2 + 1)))
+                .toList();
+        for (List<ClockRegistry> registries : list) {
+            for (int i = 0; i < registries.size() - 1; i++) {
+                var initialDate = registries.get(i).getTime();
+                var endDate = registries.get(i + 1).getTime();
+                var difference = Duration.between(initialDate, endDate);
+                totalHoursWorked = totalHoursWorked.plus(difference);
+            }
         }
         return totalHoursWorked;
     }
