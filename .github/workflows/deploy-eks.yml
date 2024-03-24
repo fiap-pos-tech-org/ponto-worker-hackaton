@@ -48,4 +48,3 @@ jobs:
           REGISTRY_QUEUE_NAME: ${{ vars.REGISTRY_QUEUE_NAME }}
           REPORT_QUEUE_NAME: ${{ vars.REPORT_QUEUE_NAME }}
           ENV: ${{ vars.ENV }}
-          
