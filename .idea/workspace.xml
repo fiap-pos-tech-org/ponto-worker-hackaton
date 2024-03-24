@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="17906731-a57d-4434-9e89-1deb94f680b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/fiap/hackaton/clockregistryworker/PontoWorkerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/fiap/hackaton/clockregistryworker/PontoWorkerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="" />
+        <option name="mavenHome" value="C:\Users\olive\mvn\bin\mvn" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -67,6 +68,7 @@
     "project.structure.proportion": "0.24926686",
     "project.structure.side.proportion": "0.43489584",
     "settings.editor.selected.configurable": "spring",
+    "spring.configuration.checksum": "9e64532831e05117d00c90dae1f54876",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -104,7 +106,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -139,7 +143,8 @@
       <updated>1711125214646</updated>
       <workItem from="1711125214647" duration="480000" />
       <workItem from="1711125787768" duration="136000" />
-      <workItem from="1711125932238" duration="35435000" />
+      <workItem from="1711125932238" duration="35615000" />
+      <workItem from="1711251899883" duration="25000" />
     </task>
     <servers />
   </component>
