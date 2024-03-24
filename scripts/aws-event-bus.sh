@@ -2,7 +2,7 @@
 
 ### TOPICS
 awslocal sns create-topic --name registry_topic && \
-awslocal sns create-topic --name report-notification-topic && \
+awslocal sns create-topic --name report_notification_topic && \
 
 ### QUEUES
 awslocal sqs create-queue --queue-name registry_queue && \
@@ -15,4 +15,4 @@ awslocal sns subscribe --topic-arn "arn:aws:sns:us-east-1:000000000000:registry_
 
 awslocal sns subscribe --topic-arn "arn:aws:sns:us-east-1:000000000000:registry_topic" \
   --protocol sqs --notification-endpoint "arn:aws:sqs:us-east-1:000000000000:report_queue" \
-  --attributes '{"RawMessageDelivery": "true", "FilterPolicy":"{\"month\":[{\"exists\": true}]}", "FilterPolicyScope":"MessageBody"}'
+  --attributes '{"RawMessageDelivery": "true", "FilterPolicy":"{\"yearMonth\":[{\"exists\": true}]}", "FilterPolicyScope":"MessageBody"}'

@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS user (
     creation_date timestamp NOT NULL,
     role VARCHAR(20) NOT NULL,
     PRIMARY KEY (id)
-    );
+);
 
 CREATE TABLE IF NOT EXISTS clock_registry (
     id bigint NOT NULL AUTO_INCREMENT,
@@ -24,4 +24,4 @@ CREATE TABLE IF NOT EXISTS report_log (
     user_id bigint NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES user (id)
-)
+);
