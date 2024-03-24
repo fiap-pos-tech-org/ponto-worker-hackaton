@@ -20,11 +20,6 @@ public class ClockRegistryDTO extends ClockRegistryBaseDTO {
         this.time = time;
     }
 
-    @Override
-    public ClockRegistryDTO comId(Long id) {
-        return new ClockRegistryDTO(id, getUserId(), timeClockId, time);
-    }
-
     public Long getTimeClockId() {
         return timeClockId;
     }

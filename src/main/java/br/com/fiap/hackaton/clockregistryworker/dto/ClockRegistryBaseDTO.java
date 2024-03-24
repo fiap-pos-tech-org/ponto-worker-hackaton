@@ -21,8 +21,6 @@ public abstract class ClockRegistryBaseDTO {
         this.userId = userId;
     }
 
-    public abstract ClockRegistryBaseDTO comId(Long id);
-
     public Long getId() {
         return id;
     }

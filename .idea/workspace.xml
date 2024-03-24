@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17906731-a57d-4434-9e89-1deb94f680b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy-eks.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy-eks.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/fiap/hackaton/clockregistryworker/PontoWorkerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/fiap/hackaton/clockregistryworker/PontoWorkerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryBaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryBaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +147,7 @@
       <workItem from="1711125214647" duration="480000" />
       <workItem from="1711125787768" duration="136000" />
       <workItem from="1711125932238" duration="35615000" />
-      <workItem from="1711251899883" duration="25000" />
+      <workItem from="1711251899883" duration="1438000" />
     </task>
     <servers />
   </component>
