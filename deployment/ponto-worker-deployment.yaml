@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clockregistryworker
+  labels:
+    app: clockregistryworker
+spec:
+  template:
+    metadata:
+      name: ponto-worker
+      labels:
+        app: ponto-worker
+    spec:
+      containers:
+        - name: ponto-worker
+          image: geter/ponto-worker-techchallenge38:latest
+          imagePullPolicy: "Always"
+          env:
+            - name: DB_HOST
+              value: ${DB_HOST}
+            - name: DB_USER
+              value: ${DB_USER}
+            - name: DB_PASS
+              value: ${DB_PASS}
+            - name: REPORT_NOTIFICATION_TOPIC_ARN
+              value: ${REPORT_NOTIFICATION_TOPIC_ARN}
+            - name: REGISTRY_QUEUE_NAME
+              value: ${REGISTRY_QUEUE_NAME}
+            - name: REPORT_QUEUE_NAME
+              value: ${REPORT_QUEUE_NAME}
+            - name: ENV
+              value: ${ENV}
+          volumeMounts:
+            - mountPath: /ponto-worker-volume
+              name: ponto-worker-volume
+      volumes:
+        - name: ponto-worker-volume
+          hostPath:
+            path: /home/ponto-worker-volume
+            type: DirectoryOrCreate
+      serviceAccountName: ponto-worker-serviceaccount
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ponto-worker

@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17906731-a57d-4434-9e89-1deb94f680b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryReportDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/aws-event-bus.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/aws-event-bus.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/PontoWorkerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/PontoWorkerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/config/mapper/ObjectMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/config/mapper/ObjectMapperConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/config/message/JMSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/config/message/JMSConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/config/message/SNSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/config/message/SNSConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/config/message/SQSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/config/message/SQSConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/dto/ClockRegistryBaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryBaseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/dto/ClockRegistryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/dto/ClockRegistryDailyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/ClockRegistryDailyDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/dto/ClockRegistryReportDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/entity/ClockRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/entity/ClockRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/entity/ReportLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/entity/ReportLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/entity/enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/entity/enums/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/exception/EntityNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/exception/EntityNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/mapper/ClockRegistryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/mapper/ClockRegistryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/message/consumer/TimeRegistryConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/message/consumer/TimeRegistryConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/message/consumer/TimeReportConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/message/consumer/TimeReportConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/message/producer/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/message/producer/ReportNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/message/producer/SendClockRegistriesReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/message/producer/SendClockRegistriesReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/repository/ClockRegistryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/repository/ClockRegistryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/repository/ReportLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/repository/ReportLogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/pontoworker/service/ClockRegistryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/service/ClockRegistryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/pontoworker/PontoWorkerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/fiap/hackaton/clockregistryworker/PontoWorkerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +139,7 @@
       <updated>1711125214646</updated>
       <workItem from="1711125214647" duration="480000" />
       <workItem from="1711125787768" duration="136000" />
-      <workItem from="1711125932238" duration="34496000" />
+      <workItem from="1711125932238" duration="35435000" />
     </task>
     <servers />
   </component>
@@ -179,15 +147,6 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/fiap/hackaton/clockregistryworker/service/ClockRegistryService.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="clockRegistries.get(5).time" />
